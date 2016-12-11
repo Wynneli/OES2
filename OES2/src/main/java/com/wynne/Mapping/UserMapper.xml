@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wynne.Dao.IUserDao">
+	
+	<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置 成包名+sql映射文件名，这样就能够保证namespace的值是唯一的 -->
+	  <select id="selectByPrimaryKey" parameterType="java.lang.Integer"
+		resultType="com.wynne.Entity.User" >
+		select *from user3 where id=#{id}
+	</select>
+	<!--<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from user_t
+		where id = #{id,jdbcType=INTEGER}
+	</select>-->
+</mapper>
