@@ -148,12 +148,12 @@
             <version>${slf4j.version}</version>  
         </dependency>  
         <!-- log end -->  
-        <!-- 映入JSON  
+        <!-- 映入JSON  -->
         <dependency>  
             <groupId>org.codehaus.jackson</groupId>  
             <artifactId>jackson-mapper-asl</artifactId>  
             <version>1.9.13</version>  
-        </dependency>   -->
+        </dependency>   
         <!-- 上传组件包 -->  
         <dependency>  
             <groupId>commons-fileupload</groupId>  
@@ -172,23 +172,4 @@
         </dependency>  
 
     </dependencies>
-    
-    <build>
-        <finalName>maven01</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.2.8.v20150217</version>
-                <configuration>
-                    <httpConnector>
-                        <port>80</port>
-                    </httpConnector>
-                    <stopKey>shutdown</stopKey>
-                    <stopPort>9966</stopPort>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-  
 </project>
